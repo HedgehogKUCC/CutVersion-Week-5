@@ -1,0 +1,221 @@
+nav {
+  padding-bottom: 3.2rem;
+}
+
+.navTitle {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  margin-right: 4.6rem;
+  user-select: none;
+}
+
+.navAllCourses {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.more {
+  vertical-align: middle;
+  color: $secondary;
+  margin-left: 7px;
+}
+
+.search {
+  margin-right: 2.6rem;
+}
+
+.allComments {
+  min-width: 320px;
+  margin-right: 1.6rem;
+  p {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 6px;
+
+    .name {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: #0000009A;
+      font-weight: normal;
+    }
+  }
+
+  ul {
+    border: 1px solid #CDDDCD;
+  }
+
+  li {
+    padding: 12px;
+    border-bottom: 1px solid #CDDDCD;
+
+    &:first-child {
+      background-color: $primary;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    p:first-child {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.comment {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #707070;
+    margin-bottom: 15px;
+  }
+}
+
+.commentContent {
+  border: 1px solid #CDDDCD;
+  margin-bottom: 1.6rem;
+
+  li {
+    border-bottom: 1px solid #CDDDCD;
+    padding: 1.6rem 3.2rem 2.2rem 1.6rem;
+
+    h4 {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 4px;
+    }
+  
+    p {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      color: $dark;
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      padding: 1.2rem 1.6rem;
+      background-color: $primary;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .timestamp {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #0000009A;
+    margin-bottom: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+  }
+
+  .content {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.6rem;
+
+    span {
+      color: $secondary;
+      background-color: $primary;
+      padding: 1.5px 1px;
+    }
+  }
+
+  a {
+    color: $dark;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border: 1px solid #CDDDCD;
+    background-color: $primary;
+    padding: 1rem 1.6rem 1rem 1.2rem;
+    margin-bottom: 1.6rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .download {
+    vertical-align: bottom;
+  }
+
+  .star {
+    margin-right: 2.4rem;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.teacher {
+  .content {
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: normal;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.arrowChange {
+  .left {
+    margin-right: 2.3rem;
+  }
+}
+
+.buttonHandler {
+  .btn {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .read {
+    padding: 0.75rem 4rem;
+    margin-right: 1.6rem;
+  }
+
+  .reply {
+    padding: 0.75rem 3.6rem;
+  }
+}

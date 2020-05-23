@@ -3,9 +3,13 @@ html {
   line-height: 10px;
 }
 
-* {
-  // outline: 1px solid red;
+body {
+  color: $dark;
 }
+
+// * {
+//   outline: 1px solid red;
+// }
 
 ul {
   margin: 0;
@@ -13,6 +17,6 @@ ul {
   list-style: none;
 }
 
-h1, h2, p {
+h1, h2, h4, h5, p {
   margin: 0;
 }
