@@ -9,7 +9,7 @@
 
 ## 說明
 
-該專案已預設引入 Boostrap4、popper.js 以及 jQuery 因此可以直接在底下直接使用，此外已經在 layout.ejs 載入 Font Awesome CDN。
+該專案已預設引入 Boostrap4、popper.js 以及 jQuery 因此可以直接在底下直接使用，此外已經在 layout.ejs 載入 Material Icons CDN。
 
 若有需要調整相關路徑參數可在 envOptions.js 中調整，但建議不要隨意調整導致 Gulp 無法正常運行。
 
