@@ -23,36 +23,36 @@
   <body>
     <div id="app" class="d-flex" style="min-height: 100vh;">
       <header class="d-flex flex-column justify-content-between">
-        <ul id="menuList">
+        <ul id="<%- title %>">
           <li>
             <h1>
-              <a href=""><img src="./assets/images/logo-ANSWER.svg" alt=""/></a>
+              <a href="javascript:;"><img src="./assets/images/logo-ANSWER.svg" alt=""/></a>
             </h1>
           </li>
           <li>
             <span class="material-icons">
               assessment
             </span>
-            <a href="">Dashboard</a>
+            <a href="javascript:;">Dashboard</a>
           </li>
           <li>
             <span class="material-icons"> forum </span><a href="">Question</a>
           </li>
-          <li class="active">
+          <li id="assignment">
             <span class="material-icons"> assignment </span
             ><a href="./index.html">Assignment</a>
           </li>
           <li>
             <span class="material-icons"> video_library </span
-            ><a href="">Course</a>
+            ><a href="javascript:;">Course</a>
           </li>
-          <li>
+          <li id="admin">
             <span class="material-icons"> supervisor_account </span
             ><a href="./admin.html">Admin</a>
           </li>
           <li>
             <span class="material-icons"> settings </span
-            ><a href="">Settings</a>
+            ><a href="javascript:;">Settings</a>
           </li>
         </ul>
         <div class="user d-flex">

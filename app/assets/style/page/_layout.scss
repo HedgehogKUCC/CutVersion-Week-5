@@ -48,7 +48,7 @@ header {
     }
   }
 
-  li.active {
+  ul#Assignment li#assignment, ul#Admin li#admin {
     border-left: 4px solid $secondary;
 
     .material-icons {
