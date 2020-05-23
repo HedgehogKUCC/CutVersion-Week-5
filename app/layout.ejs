@@ -9,85 +9,64 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <span class="material-icons">
-      3d_rotation
-    </span>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+    <div id="app" class="d-flex" style="min-height: 100vh;">
+      <header class="d-flex flex-column justify-content-between">
+        <ul>
+          <li>
+            <h1>
+              <a href=""><img src="./assets/images/logo-ANSWER.svg" alt=""/></a>
+            </h1>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li>
+            <span class="material-icons">
+              assessment
+            </span>
+            <a href="">Dashboard</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li>
+            <span class="material-icons"> forum </span><a href="">Question</a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
+          <li class="active">
+            <span class="material-icons"> assignment </span
+            ><a href="">Assignment</a>
+          </li>
+          <li>
+            <span class="material-icons"> video_library </span
+            ><a href="">Course</a>
+          </li>
+          <li>
+            <span class="material-icons"> supervisor_account </span
+            ><a href="">Admin</a>
+          </li>
+          <li>
+            <span class="material-icons"> settings </span
+            ><a href="">Settings</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
-
-    <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
+        <div class="user d-flex">
+          <img src="./assets/images/AndyChen.jpeg" alt="" />
+          <div>
+            <h2>Andy Chen</h2>
+            <p>andy0401@mail.com</p>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow-1">
+        <%- contents %>
+      </main>
+    </div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
