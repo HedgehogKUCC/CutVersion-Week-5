@@ -54,12 +54,12 @@ nav {
   }
 
   ul {
-    border: 1px solid #CDDDCD;
+    border: 1px solid $primary-dark;
   }
 
   li {
     padding: 12px;
-    border-bottom: 1px solid #CDDDCD;
+    border-bottom: 1px solid $primary-dark;
 
     &:first-child {
       background-color: $primary;
@@ -88,11 +88,11 @@ nav {
 }
 
 .commentContent {
-  border: 1px solid #CDDDCD;
+  border: 1px solid $primary-dark;
   margin-bottom: 1.6rem;
 
   li {
-    border-bottom: 1px solid #CDDDCD;
+    border-bottom: 1px solid $primary-dark;
     padding: 1.6rem 3.2rem 2.2rem 1.6rem;
 
     h4 {
@@ -160,7 +160,7 @@ nav {
     font-size: 1.6rem;
     line-height: 1.9rem;
     @include font-lato-bold;
-    border: 1px solid #CDDDCD;
+    border: 1px solid $primary-dark;
     background-color: $primary;
     padding: 1rem 1.6rem 1rem 1.2rem;
     margin-bottom: 1.6rem;
@@ -234,7 +234,7 @@ nav {
   bottom: 0;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid #CDDDCD;
+  border: 1px solid $primary-dark;
   transition: 1s;
 
   textarea {
@@ -260,6 +260,7 @@ nav {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   padding-left: 2.5rem;
+  border-bottom: 1px solid $primary-dark;
 
   strong {
     font-size: 1.6rem;

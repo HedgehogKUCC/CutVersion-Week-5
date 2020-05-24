@@ -47,7 +47,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -61,7 +65,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -75,7 +83,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -89,7 +101,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -103,7 +119,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -117,7 +137,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -131,7 +155,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -145,7 +173,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -159,7 +191,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -173,7 +209,11 @@ current: admin
         <td>emir.wicks@mail.com</td>
         <td>Yes</td>
         <td class="text-right">
-          <span class="material-icons remove_red_eye">
+          <span
+            class="material-icons remove_red_eye"
+            data-toggle="modal"
+            data-target="#adminEyeModal"
+          >
             remove_red_eye
           </span>
           <span class="material-icons">
@@ -198,4 +238,60 @@ current: admin
       </a>
     </li>
   </ul>
+</div>
+
+<!-- Modal Eye -->
+<div
+  class="modal fade adminEyeModal"
+  id="adminEyeModal"
+  data-backdrop="static"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="adminEyeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <ul class="modal-body d-flex justify-content-between">
+        <li class="emir">
+          <img src="./assets/images/EmirWicks.jpeg" alt="" />
+        </li>
+        <li class="adminContentModal w-100">
+          <p class="d-flex justify-content-between align-items-center">
+            <span>#1</span>
+            <i class="material-icons" data-dismiss="modal" aria-label="Close">
+              close
+            </i>
+          </p>
+          <p class="admin">Admin</p>
+          <h4>Emir Wicks</h4>
+          <p class="email">emir.wicks@mail.com</p>
+          <p class="iconMoreModal d-flex justify-content-between">
+            <span class="verified">Verified</span>
+            <i
+              id="iconMoreModal"
+              class="material-icons more"
+              data-toggle="collapse"
+              data-target="#collapseEye"
+            >
+              expand_more
+            </i>
+          </p>
+          <div id="collapseEye" class="collapse">
+            <div class="d-flex" style="padding-bottom: 3.2rem;">
+              <button
+                type="button"
+                class="deactivate btn btn-outline-danger btn-lg"
+              >
+                Deactivate
+              </button>
+              <button type="button" class="edit btn btn-secondary btn-lg">
+                Edit
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
