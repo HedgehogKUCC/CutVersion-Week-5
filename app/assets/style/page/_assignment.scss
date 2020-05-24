@@ -221,7 +221,72 @@ nav {
     margin-right: 1.6rem;
   }
 
-  .reply {
+  .reply, .cancel {
     padding: 0.75rem 3.6rem;
+  }
+
+  .cancel {
+    margin-right: 8px;
+  }
+
+}
+
+.commentFooter {
+  position: relative;
+}
+
+.bodyText {
+  position: absolute;
+  width: 0%;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #CDDDCD;
+  transition: 1s;
+
+  textarea {
+    width: 100%;
+    height: 180px;
+    padding-left: 25px;
+    padding-top: 16px;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  .buttonHandler {
+    text-align: right;
+    padding-right: 2.4rem;
+  }
+}
+
+.bodyTextHeader {
+  background-color: $primary;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-left: 2.5rem;
+
+  strong {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  span {
+    vertical-align: -webkit-baseline-middle;
+  }
+
+  li:first-child {
+    .arrow_drop_down {
+      vertical-align: bottom;
+      margin-left: 8px;
+    }
+  }
+
+  li + li {
+    margin-left: 3rem;
   }
 }

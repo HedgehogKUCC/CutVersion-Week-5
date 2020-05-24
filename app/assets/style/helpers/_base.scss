@@ -20,3 +20,9 @@ ul {
 h1, h2, h4, h5, p {
   margin: 0;
 }
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}

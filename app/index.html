@@ -169,9 +169,76 @@ current: index
         <button type="button" class="read btn btn-outline-secondary">
           Mark as read
         </button>
-        <button type="button" class="reply btn btn-secondary">
+        <button id="onReply" type="button" class="reply btn btn-secondary">
           Reply
         </button>
+      </div>
+      <div class="bodyText">
+        <ul class="bodyTextHeader d-flex align-items-center">
+          <li>
+            <strong>Body Text</strong>
+            <span class="arrow_drop_down material-icons">
+              arrow_drop_down
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_bold
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_italic
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_list_bulleted
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_list_numbered
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              insert_photo
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              insert_link
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              chevron_left
+            </span>
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </li>
+        </ul>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Rely an answer..."
+        ></textarea>
+        <div class="buttonHandler">
+          <button
+            id="onCancel"
+            type="button"
+            class="cancel btn btn-outline-secondary"
+          >
+            Cancel
+          </button>
+          <button type="button" class="reply btn btn-secondary">
+            Reply
+          </button>
+        </div>
       </div>
     </div>
   </div>

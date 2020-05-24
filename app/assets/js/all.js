@@ -1,11 +1,11 @@
 $(document).ready(() => {
-  // $('#menuList').click(function(e) {
-  //   e.preventDefault();
-  //   if (e.target.nodeName !== 'A') {
-  //     return;
-  //   }
-  //   let li = e.target.parentNode;
-  //   $(li).toggleClass('active');
-  //   $(li).siblings().removeClass('active');
-  // })
+  $('#onReply').click(function () {
+    $('.bodyText').css('width', '100%');
+    $('.bodyText').css('height', '290px');
+  })
+
+  $('#onCancel').click(function() {
+    $('.bodyText').css('width', '0%');
+    $('.bodyText').css('height', '0px');
+  })
 });
