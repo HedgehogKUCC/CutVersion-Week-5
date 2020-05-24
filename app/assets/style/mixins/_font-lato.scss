@@ -1,0 +1,9 @@
+@mixin font-lato-normal {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}

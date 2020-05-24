@@ -2,6 +2,8 @@
 @import "./helpers/variables";
 @import "bootstrap";
 
+@import "./mixins/font-lato";
 @import "./helpers/base";
 @import "./page/layout";
 @import "./page/assignment";
+@import "./page/admin";

@@ -1,0 +1,46 @@
+.add {
+  color: $secondary;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.navNewAdmin {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  @include font-lato-bold;
+}
+
+.remove_red_eye {
+  margin-right: 2.5rem;
+}
+
+.adminTable {
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  @include font-lato-normal;
+
+  th, td {
+    border-top: none;
+    border-bottom: 1px solid $primary;
+    padding: 1.4rem;
+  }
+
+  thead {
+    th {
+      border-bottom: 1px solid $dark;
+      vertical-align: middle;
+      @include font-lato-bold;
+    }
+  }
+
+  tbody {
+    th {
+      font-weight: normal;
+    }
+
+    th, td {
+      vertical-align: middle;
+    }
+  }
+}
