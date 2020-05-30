@@ -110,7 +110,7 @@
   margin-bottom: 3.2rem;
 }
 
-.adminAddModal {
+.adminAddModal, .adminEditModal {
   .modal-body {
     padding: 3.2rem 3.2rem 1.6rem;
 
@@ -173,6 +173,11 @@
     margin-right: 0.9rem;
   }
 
+  .iconCheckCircle {
+    color: $secondary;
+    margin-right: 1rem;
+  }
+
   .unverified {
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -220,37 +225,89 @@
       padding: 0.75rem 3rem;
     }
   }
+
+  /* On mouse-over, add background color */
+  .checkbox:hover input ~ .checkmark {
+    background-color: $primary;
+  }
+
+  /* When the checkbox is checked, add background */
+  .checkbox input:checked ~ .checkmark {
+    background-color: $secondary;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox .checkmark:after {
+    left: 5px;
+    top: 0;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
 }
 
-/* On mouse-over, add background color */
-.checkbox:hover input ~ .checkmark {
-  background-color: $primary;
-}
+.adminEditModal {
+  .modal-body {
+    .form-control {
+      height: 5.1rem;
+      border-color: $primary;
+      background-color: $primary;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: $dark;
 
-/* When the checkbox is checked, add background */
-.checkbox input:checked ~ .checkmark {
-  background-color: $secondary;
-}
+      &::placeholder {
+        color: $dark;
+      }
+    }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+    small {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+    }
 
-/* Show the checkmark when checked */
-.checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
+    .selectLevel {
+      border-color: $dark;
+      background-color: transparent;
+    }
+  }
 
-/* Style the checkmark/indicator */
-.checkbox .checkmark:after {
-  left: 5px;
-  top: 0;
-  width: 10px;
-  height: 15px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+  .btn-outline-primary-dark {
+    color: $primary-dark;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .deactivateText {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $danger;
+  }
+
+  .deactivateBtn {
+    margin-bottom: 4.8rem;
+  }
+
+  .buttonHandler {
+
+    .update {
+      padding: 0.75rem 3rem;
+    }
+  }
 }

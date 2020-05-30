@@ -58,7 +58,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -76,7 +80,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -94,7 +102,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -112,7 +124,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -130,7 +146,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -148,7 +168,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -166,7 +190,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -184,7 +212,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -202,7 +234,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -220,7 +256,11 @@ current: admin
           >
             remove_red_eye
           </span>
-          <span class="material-icons">
+          <span
+            class="material-icons"
+            data-toggle="modal"
+            data-target="#adminEditModal"
+          >
             create
           </span>
         </td>
@@ -328,11 +368,141 @@ current: admin
             </label>
           </div>
           <div class="buttonHandler d-flex justify-content-end">
-            <button type="button" class="cancel btn btn-outline-secondary">
+            <button
+              type="button"
+              data-dismiss="modal"
+              class="cancel btn btn-outline-secondary"
+            >
               Cancel
             </button>
             <button type="button" class="add btn btn-secondary">
               Add
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit -->
+<div
+  class="modal fade adminEditModal"
+  id="adminEditModal"
+  data-backdrop="static"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="adminEditModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+    role="document"
+  >
+    <div class="modal-content" style="max-width: 480px;">
+      <div class="modal-body">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+          <h5>Edit Admin</h5>
+          <i class="material-icons" data-dismiss="modal" aria-label="Close">
+            close
+          </i>
+        </div>
+        <h6 class="h6">Account</h6>
+        <form action="">
+          <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Emir Wicks"
+            />
+          </div>
+          <div class="form-group mb-4">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="emir.wicks@mail.com"
+            />
+          </div>
+          <hr class="mb-4" />
+          <h6 class="h6">Verification</h6>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <span class="iconCheckCircle material-icons">
+                check_circle
+              </span>
+              <span class="unverified">Verified</span>
+            </div>
+            <small>2020/4/12</small>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-primary-dark btn-block btn-lg mb-4"
+          >
+            Send Verification Mail
+          </button>
+          <hr class="mb-4" />
+          <div class="form-group mb-4">
+            <label class="h6" for="level">Access Level</label>
+            <select id="level" class="form-control selectLevel">
+              <option selected disabled>Admin</option>
+              <option value="...">...</option>
+            </select>
+          </div>
+          <hr class="mb-4" />
+          <h6 class="h6">Custom Access</h6>
+          <label class="checkbox mb-3" for="lectureEdit">
+            Lecture
+            <input type="checkbox" name="isAgree" id="lectureEdit" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox mb-3" for="couponEdit"
+            >Coupon
+            <input type="checkbox" name="isAgree" id="couponEdit" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox mb-3" for="messageEdit"
+            >Message
+            <input type="checkbox" name="isAgree" id="messageEdit" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox mb-3" for="settingEdit"
+            >Setting
+            <input type="checkbox" name="isAgree" id="settingEdit" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox mb-0" for="taskEdit"
+            >Task Menu
+            <input type="checkbox" name="isAgree" id="taskEdit" />
+            <span class="checkmark"></span>
+          </label>
+          <hr class="my-4" />
+          <h6 class="h6">Deactivate Account</h6>
+          <div class="d-flex align-items-center mb-3">
+            <span class="iconWarning material-icons">
+              warning
+            </span>
+            <span class="deactivateText">This cannot be undone!</span>
+          </div>
+          <button
+            type="button"
+            class="deactivateBtn btn btn-outline-danger btn-lg btn-block"
+          >
+            Deactivate This Account
+          </button>
+          <div class="buttonHandler d-flex justify-content-end">
+            <button
+              type="button"
+              data-dismiss="modal"
+              class="cancel btn btn-outline-secondary"
+            >
+              Cancel
+            </button>
+            <button type="button" class="update btn btn-secondary">
+              Update
             </button>
           </div>
         </form>
