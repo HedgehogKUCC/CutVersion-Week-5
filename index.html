@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <div id="app" class="d-flex" style="min-height: 100vh;">
+      <header class="d-flex flex-column justify-content-between">
+        <ul id="Assignment">
+          <li>
+            <h1>
+              <a href="javascript:;"><img src="./assets/images/logo-ANSWER.svg" alt=""/></a>
+            </h1>
+          </li>
+          <li>
+            <span class="material-icons">
+              assessment
+            </span>
+            <a href="javascript:;">Dashboard</a>
+          </li>
+          <li>
+            <span class="material-icons"> forum </span><a href="">Question</a>
+          </li>
+          <li id="assignment">
+            <span class="material-icons"> assignment </span
+            ><a href="./index.html">Assignment</a>
+          </li>
+          <li>
+            <span class="material-icons"> video_library </span
+            ><a href="javascript:;">Course</a>
+          </li>
+          <li id="admin">
+            <span class="material-icons"> supervisor_account </span
+            ><a href="./admin.html">Admin</a>
+          </li>
+          <li>
+            <span class="material-icons"> settings </span
+            ><a href="javascript:;">Settings</a>
+          </li>
+        </ul>
+        <div class="user d-flex">
+          <img src="./assets/images/AndyChen.jpeg" alt="" />
+          <div>
+            <h2>Andy Chen</h2>
+            <p>andy0401@mail.com</p>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow-1">
+        
+<nav>
+  <ul class="d-flex justify-content-between align-items-center">
+    <li>
+      <span class="navTitle">Assignment</span>
+      <span class="navAllCourses">All Courses</span>
+      <span class="material-icons more">
+        expand_more
+      </span>
+    </li>
+    <li>
+      <span class="material-icons search">
+        search
+      </span>
+      <span class="material-icons">
+        notifications_active
+      </span>
+    </li>
+  </ul>
+</nav>
+<section class="commentSection d-flex justify-content-between">
+  <div class="allComments">
+    <p class="d-flex">
+      All (4)
+      <span class="material-icons more">
+        expand_more
+      </span>
+    </p>
+    <ul>
+      <li>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Chapter Assignment 2</span>
+          <span>4 hrs ago</span>
+        </p>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Please check this file…</span>
+          <span class="name">Emily Wang</span>
+        </p>
+      </li>
+      <li>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Chapter Assignment 1</span>
+          <span>12 hrs ago</span>
+        </p>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>My Homework</span>
+          <span class="name">David Xu</span>
+        </p>
+      </li>
+      <li>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Final Assignment</span>
+          <span>18 hrs ago</span>
+        </p>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Have a problem with this…</span>
+          <span class="name">Tony Wei</span>
+        </p>
+      </li>
+      <li>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Final Assignment</span>
+          <span>19 hrs ago</span>
+        </p>
+        <p class="d-flex justify-content-between align-items-center">
+          <span>Did I do it right?</span>
+          <span class="name">Christina Lin</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="comment flex-grow-1">
+    <p class="text-right">
+      2 comments
+    </p>
+    <ul class="commentContent">
+      <li class="d-flex justify-content-between align-items-center">
+        <div>
+          <h4>Chapter Assignment 2 / HTML&CSS</h4>
+          <p>Please check this file for me, thanks!</p>
+        </div>
+        <span class="material-icons">
+          more_vert
+        </span>
+      </li>
+      <li>
+        <article>
+          <div class="d-flex">
+            <img src="./assets/images/EmilyWang.jpeg" alt="" />
+            <div>
+              <h5>Emily Wang</h5>
+              <p class="timestamp">10:38 AM (4 hours ago)</p>
+              <p class="content">
+                Hi Teacher, the attached file is my homework of chapter 2. And
+                here comes a question: Why in the following code the height of
+                the <span>div</span> is bigger than the height of the
+                <span>img</span> ? There is a gap below the image, but it
+                doesn’t seems to be a padding/margin.
+                <br />
+                What is the gap or extra space below image?
+              </p>
+              <a href="" class="btn">
+                <span class="material-icons download">
+                  attach_file
+                </span>
+                HW-2-David.zip
+              </a>
+              <hr />
+            </div>
+          </div>
+        </article>
+        <article class="teacher">
+          <div class="d-flex">
+            <img src="./assets/images/AndyChen.jpeg" alt="" />
+            <div class="w-100">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h5>Andy Chen (You)</h5>
+                  <p class="timestamp">13:24 AM (1 hours ago)</p>
+                </div>
+                <div>
+                  <span class="material-icons star">
+                    star_border
+                  </span>
+                  <span class="material-icons">
+                    create
+                  </span>
+                </div>
+              </div>
+              <div class="content">
+                Hi David, by default, an image is rendered inline, like a letter
+                so it sits on the same line that a, b, c and d sit on. There is
+                space below that line for the descenders you find on letters
+                like g, j, p and q.
+                <br />
+                <br />
+                You can:
+                <br />
+                <br />
+                <p>
+                  • adjust the <span>vertical-align</span> of the image to
+                  position it elsewhere ( e.g. the <span>middle</span> )
+                </p>
+                <p>• change the <span>display</span> so it isn’t inline.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div
+      class="commentFooter d-flex justify-content-between align-items-center"
+    >
+      <div class="arrowChange">
+        <span class="material-icons left">
+          chevron_left
+        </span>
+        <span class="material-icons">
+          chevron_right
+        </span>
+      </div>
+      <div class="buttonHandler">
+        <button type="button" class="read btn btn-outline-secondary">
+          Mark as read
+        </button>
+        <button id="onReply" type="button" class="reply btn btn-secondary">
+          Reply
+        </button>
+      </div>
+      <div class="bodyText">
+        <ul class="bodyTextHeader d-flex align-items-center">
+          <li>
+            <strong>Body Text</strong>
+            <span class="arrow_drop_down material-icons">
+              arrow_drop_down
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_bold
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_italic
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_list_bulleted
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              format_list_numbered
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              insert_photo
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              insert_link
+            </span>
+          </li>
+          <li>
+            <span class="material-icons">
+              chevron_left
+            </span>
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </li>
+        </ul>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Rely an answer..."
+        ></textarea>
+        <div class="buttonHandler">
+          <button
+            id="onCancel"
+            type="button"
+            class="cancel btn btn-outline-secondary"
+          >
+            Cancel
+          </button>
+          <button type="button" class="reply btn btn-secondary">
+            Reply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
