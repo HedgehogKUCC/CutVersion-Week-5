@@ -9,7 +9,11 @@ current: admin
   <ul class="d-flex justify-content-between align-items-center">
     <li>
       <span class="navTitle">Admin</span>
-      <span class="material-icons add">
+      <span
+        class="material-icons add"
+        data-toggle="modal"
+        data-target="#adminAddModal"
+      >
         add
       </span>
       <span class="navNewAdmin">Add New Admin</span>
@@ -238,6 +242,103 @@ current: admin
       </a>
     </li>
   </ul>
+</div>
+
+<!-- Modal Add -->
+<div
+  class="modal fade adminAddModal"
+  id="adminAddModal"
+  data-backdrop="static"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="adminAddModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+    role="document"
+  >
+    <div class="modal-content" style="max-width: 480px;">
+      <div class="modal-body">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+          <h5>New Admin</h5>
+          <i class="material-icons" data-dismiss="modal" aria-label="Close">
+            close
+          </i>
+        </div>
+        <h6 class="h6">Account</h6>
+        <form action="">
+          <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group mb-4">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <hr class="mb-4" />
+          <h6 class="h6">Verification</h6>
+          <div class="d-flex align-items-center mb-3">
+            <span class="iconWarning material-icons">
+              warning
+            </span>
+            <span class="unverified">Unverified</span>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-primary-dark btn-block btn-lg mb-4"
+          >
+            Send Verification Mail
+          </button>
+          <hr class="mb-4" />
+          <div class="form-group mb-4">
+            <label class="h6" for="level">Access Level</label>
+            <select id="level" class="form-control">
+              <option selected disabled>-Choose access level-</option>
+              <option value="...">...</option>
+            </select>
+          </div>
+          <hr class="mb-4" />
+          <div class="accessCheckbox">
+            <h6 class="h6">Custom Access</h6>
+            <label class="checkbox mb-3" for="lecture"
+              >Lecture
+              <input type="checkbox" name="isAgree" id="lecture" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox mb-3" for="coupon"
+              >Coupon
+              <input type="checkbox" name="isAgree" id="coupon" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox mb-3" for="message"
+              >Message
+              <input type="checkbox" name="isAgree" id="message" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox mb-3" for="setting"
+              >Setting
+              <input type="checkbox" name="isAgree" id="setting" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox mb-0" for="task"
+              >Task Menu
+              <input type="checkbox" name="isAgree" id="task" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="buttonHandler d-flex justify-content-end">
+            <button type="button" class="cancel btn btn-outline-secondary">
+              Cancel
+            </button>
+            <button type="button" class="add btn btn-secondary">
+              Add
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Modal Eye -->
